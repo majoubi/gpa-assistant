@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 350px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+h1 {
+  font-size: 1.4em;
+  color: #1976d2;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.85em;
+  color: #666;
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.section h2 {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.info-box {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  border: 1px solid #e0e0e0;
+}
+
+.info-box .loading {
+  color: #999;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: #1976d2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1565c0;
+}
+
+.btn-secondary {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #43a047;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 0.85em;
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-small:hover {
+  background: #d0d0d0;
+}
+
+.btn-link {
+  background: none;
+  color: #666;
+  font-size: 0.85em;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-link:hover {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.toggle input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive pour les notifications */
+.success {
+  background: #e8f5e9 !important;
+  border-color: #4caf50 !important;
+  color: #2e7d32 !important;
+}
+
+.error {
+  background: #ffebee !important;
+  border-color: #f44336 !important;
+  color: #c62828 !important;
+}
